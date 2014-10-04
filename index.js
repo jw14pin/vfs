@@ -3,7 +3,6 @@ var express = require('express');
 var app = express();
 var http = require('http').Server(app);
 var path = require('path');
-var fs = require('fs');
 
 // app global variables
 var routes = require('./routes/index');
