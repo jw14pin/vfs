@@ -1,0 +1,5 @@
+structure of json:
+name (string)
+	children (array)
+		name (string)
+		size (string)
