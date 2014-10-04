@@ -5,6 +5,7 @@
   "dependencies": {
     "express": "*",
     "socket.io": "*",
-    "d3": "*"
+    "d3": "*",
+    "jade":"*"
   }
 }
