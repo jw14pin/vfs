@@ -1,0 +1,10 @@
+{
+  "name": "socket-vfs-program",
+  "version": "0.0.1",
+  "description": "socket.io app for vfs",
+  "dependencies": {
+    "express": "*",
+    "socket.io": "*",
+    "d3": "*"
+  }
+}
