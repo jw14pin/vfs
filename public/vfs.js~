@@ -30,7 +30,6 @@ var flare = function(error, root) {
       view;
 
   svg.selectAll("circle").remove();
-  svg.selectAll("text").remove();
 
   var circle = svg.selectAll("circle")
       .data(nodes)

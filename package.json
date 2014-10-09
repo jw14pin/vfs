@@ -6,6 +6,7 @@
     "express": "*",
     "socket.io": "*",
     "d3": "*",
-    "jade":"*"
+    "jade":"*",
+    "socket.io":"*"
   }
 }

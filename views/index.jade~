@@ -1,8 +1,22 @@
 doctype html
-	head
-		title=title
-		style
-			include vfs.css
-	body
-		script(src='//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js')
-		script include vfs.js
+head
+	title=title
+	link(type='text/css', rel='stylesheet', href='./public/vfs.css')
+body
+	script(src='http://code.jquery.com/jquery-1.11.1.js')
+	script(src='//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.min.js')
+	script(src='/socket.io/socket.io.js')
+	script(src='./public/vfs.js')
+	<script>
+var socket = io();
+  $('form').submit(function(){
+    socket.emit('chat message', $('#m').val());
+    $('#m').val('');
+    return false;
+  });
+  socket.on('chat message', function(msg){
+    $('#messages').append($('<li>').text(msg));
+  });
+
+  		
+	</script>
